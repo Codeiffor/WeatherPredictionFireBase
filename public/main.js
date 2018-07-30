@@ -191,6 +191,7 @@ function DisplayWeather(resp){
       predictionWindow[i].innerHTML=innerHtml;
     }
     city.value='';
-    city.focus();
+    if(document.body.clientWidth>767)
+      city.focus();
   }
 }
